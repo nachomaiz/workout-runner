@@ -1,0 +1,14 @@
+{
+    "small": {
+        "name": "Lucida Sans",
+        "size": 20
+    },
+    "medium": {
+        "name": "Lucida Sans",
+        "size": 50
+    },
+    "large": {
+        "name": "Lucida Sans",
+        "size": 100
+    }
+}

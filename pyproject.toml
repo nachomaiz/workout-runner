@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "workout-runner"
+version = "0.1.0"
+authors = [{ name = "Ignacio Maiz Vilches", email = "ignacio.maiz@gmail.com" }]
+description = "Application that recreates the New York Times's *Well Workouts* 'Scientific 7-Minute Workout' challenge."
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+dependencies = ["pygame-ce >= 2.4"]
+
+[project.optional-dependencies]
+dev = ["black", "isort", "mypy", "pylint"]
+
+[tool.setuptools.packages.find]
+include = ["workout*"]
+
+[tool.setuptools_scm]
