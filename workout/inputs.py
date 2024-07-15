@@ -20,6 +20,7 @@ class Inputs:
             elif event.type == pg.MOUSEBUTTONDOWN:  # pylint: disable=no-member
                 if not any(p.collidepoint(event.pos) for p in pressable):
                     res.pause = True
-                else: res.stop = True
+                else:
+                    res.stop = True
 
         return res
