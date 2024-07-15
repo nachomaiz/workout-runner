@@ -23,7 +23,7 @@ class Progress:
             center.x - radius, center.y - radius, radius * 2, radius * 2
         )
 
-        self.progress = self.second_progress = 0.0
+        self.progress = self.seconds_progress = 0.0
         self.paused = False
 
         self.font = assets.fonts["medium"]
@@ -40,11 +40,11 @@ class Progress:
         if not self.paused:
             seconds = dt / 1000
             self.progress = min(self.progress + seconds, self.duration)
-            self.second_progress += seconds
+            self.seconds_progress += seconds
 
-        if self.second_progress >= 1.0:
+        if self.seconds_progress >= 1.0:
             self.tock_sound.play(maxtime=300)
-            self.second_progress %= 1.0
+            self.seconds_progress %= 1.0
 
         if self.done:
             self.double_tock_sound.play(maxtime=500)
@@ -75,4 +75,4 @@ class Progress:
         if new_duration:
             self.duration = new_duration
 
-        self.progress = self.second_progress = 0.0
+        self.progress = self.seconds_progress = 0.0
