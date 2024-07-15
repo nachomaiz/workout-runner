@@ -3,11 +3,12 @@ from typing import Protocol, Self, Sequence
 import pygame as pg
 
 from .assets import Assets
-from .section import Inputs, WelcomeScreen
+from .section import AppState, Inputs, WelcomeScreen
 
 
 class Section(Protocol):
     title: str
+    state: AppState
 
     @property
     def done(self) -> bool: ...
@@ -100,7 +101,10 @@ class App:
         title_rect.centery = 700
 
         surf.blit(title_surf, title_rect)
-        if self.current_section.title != "Exercise Challenge":
+        if (
+            self.current_section.title != "Exercise Challenge"
+            and self.current_section.state == AppState.PAUSED
+        ):
             stop_surf = self.font.render(
                 " ■ Stop workout ", True, "white" if self.stop_hover else "lightgrey"
             )
@@ -114,6 +118,11 @@ class App:
                 width=1,
                 border_radius=2,
             )
+
+        # mouse_pos = pg.mouse.get_pos()
+        # mouse_pos_surf = self.font.render(f"{mouse_pos}", True, "white")
+        # mouse_pos_rect = mouse_pos_surf.get_frect()
+        # surf.blit(mouse_pos_surf, mouse_pos_rect)
 
     def run(self) -> None:
         while True:
