@@ -1,0 +1,47 @@
+[
+    {
+        "title": "1. Reverse lunge with rotation alternating sides.",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "2. Lateral pillar bridge - left",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "3. Push up to row to burpee",
+        "duration": 60.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "4. Lateral pillar bridge - right",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "5. Single leg RDL to curl to press - left",
+        "duration": 60.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "6. Single leg RDL to curl to press - right",
+        "duration": 60.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "7. Plank with arm lift",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "8. Lateral lunge with overhead extension",
+        "duration": 60.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "9. Bentover row with alternating arms",
+        "duration": 60.0,
+        "rest_duration": 10.0
+    }
+]

@@ -13,14 +13,14 @@ class Inputs:
 
     @classmethod
     def from_events(cls, events: list[pg.Event], pressable: list[pg.FRect]) -> Self:
-        res = cls()
+        inputs = cls()
         for event in events:
             if event.type == pg.QUIT:  # pylint: disable=no-member
-                res.quit = True
+                inputs.quit = True
             elif event.type == pg.MOUSEBUTTONDOWN:  # pylint: disable=no-member
                 if not any(p.collidepoint(event.pos) for p in pressable):
-                    res.pause = True
+                    inputs.pause = True
                 else:
-                    res.stop = True
+                    inputs.stop = True
 
-        return res
+        return inputs

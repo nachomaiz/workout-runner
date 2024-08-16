@@ -64,7 +64,7 @@ class App:
                 [section.title for section in sections or []],
                 assets,
             )
-        ] + list(sections or [])
+        ] + list(sections)
         self.section_it = SectionIterator(self.sections)
         self.current_section = next(self.section_it)
         self.font = assets.fonts["small"]
@@ -101,10 +101,7 @@ class App:
         title_rect.centery = 700
 
         surf.blit(title_surf, title_rect)
-        if (
-            self.current_section.title != "Exercise Challenge"
-            and self.current_section.state == AppState.PAUSED
-        ):
+        if self.current_section.state == AppState.PAUSED:
             stop_surf = self.font.render(
                 " ■ Stop workout ", True, "white" if self.stop_hover else "lightgrey"
             )

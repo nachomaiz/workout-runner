@@ -108,12 +108,19 @@ class WelcomeScreen:
         if self.starting:
             if inputs.pause:
                 self.progress.toggle_pause()
+                self.state = (
+                    AppState.PAUSED if self.progress.paused else AppState.WELCOME
+                )
+
             self.progress.update(dt)
         elif inputs.pause:
             self.starting = True
+        else:
+            self.state = AppState.WELCOME
+            self.progress.paused = False
 
     def draw(self, surf: pg.Surface) -> None:
-        bg_color = bg_colors[self.state]
+        bg_color = bg_colors[AppState.WELCOME]
         surf.fill(bg_color)
 
         if self.starting:

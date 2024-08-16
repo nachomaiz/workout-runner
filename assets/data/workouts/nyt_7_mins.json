@@ -1,0 +1,62 @@
+[
+    {
+        "title": "1. Jumping jacks",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "2. Wall sit",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "3. Push ups",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "4. Abdominal crunches",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "5. Closed squats",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "6. Lunges",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "7. Triceps dip on chair",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "8. Plank",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "9. High knees running in place",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "10. Open Squats",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "11. Push ups with rotation",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    },
+    {
+        "title": "12. Side planks",
+        "duration": 30.0,
+        "rest_duration": 10.0
+    }
+]
