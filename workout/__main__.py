@@ -1,5 +1,6 @@
 import sys
 from typing import Sequence
+
 import pygame as pg
 
 from .app import App
